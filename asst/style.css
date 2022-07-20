@@ -265,6 +265,18 @@ footer {
 /*=================== Media Quary =================== */
 /*=================== Small Device =================== */
 @media screen and (max-width:688px) {
+    nav>ul>li{
+        display: none;
+    }
+    .logo{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        margin-left: 100px;
+    }
+
+
+
         .hero-container {
             width: 100%;
                 flex-direction: column; 
