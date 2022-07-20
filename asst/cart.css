@@ -39,22 +39,29 @@ nav {
 
 .logo a {
     font-size: 24px;
-    color: #3A3A3A;
+    color: #E02C6D;
     font-weight: 700;
+    transition: all 0.3s;
 }
 
+.logo a:hover {
+    color: #ff5493;
+}
 nav ul li {
     display: inline-block;
     padding: 10px 20px;
     text-transform: capitalize;
     color: #3A3A3A;
-    color: tomato;
 }
 
 nav ul li a {
     text-transform: capitalize;
     color: #3A3A3A;
     font-weight: 500;
+    transition: all 0.3s;
+}
+nav ul li a:hover {
+    color: red;
 }
 
 /*=================== Hero Design =================== */
@@ -76,7 +83,33 @@ nav ul li a {
     line-height: 80px;
     color: #fff;
     margin-bottom: 16px;
+    animation: lighting 2s ease-in 0.4s infinite alternate;
+    animation-play-state: running;
+    
 }
+/* animation */
+@keyframes lighting {
+    0% {
+        color: dodgerblue;
+        left: 0;
+
+
+    }
+
+    100% {
+        color: red;
+
+
+    }
+
+}
+
+
+
+/* .hero-title:hover{
+    transform: rotate(45deg);
+    transform: scale(.8);
+} */
 
 .hero-para {
     font-weight: 300;
@@ -247,7 +280,7 @@ footer{
                 display: flex;
                 margin-left: 100px;
             }
-            
+
     .hero-items{
         width: 100%;
         flex-direction: column;
