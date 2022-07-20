@@ -4,12 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 
 
-
+/*=================== common css =================== */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
+}
+body{
+    font-family: 'Poppins', sans-serif;
 }
 li{
     list-style: none;
@@ -20,6 +22,41 @@ a{
 section{
     padding: 4rem 10%;
 }
+
+/*=================== Navbar Design =================== */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 2px lightgray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0 10%;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #3A3A3A;
+    font-weight: 700;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: #3A3A3A;
+    color: tomato;
+}
+
+nav ul li a {
+    text-transform: capitalize;
+    color: #3A3A3A;
+    font-weight: 500;
+}
+
 /*=================== Hero Design =================== */
 
 .hero-items {
@@ -56,12 +93,6 @@ section{
     color: white;
     font-weight: 500;
     font-size: 16px;
-}
-
-.hero-img {
-    /* background-image: url('../Banner\ Image.png');
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 /*=================== Cart Design =================== */
